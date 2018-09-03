@@ -9302,16 +9302,16 @@
                         update["charisma_save_prof"] = 0;
                         update["class_resource_name"] = "";
                         break;
-                    case "Barbarian":
-                        update["hitdietype"] = 12;
-                        update["spellcasting_ability"] = "0*";
+                    case "Adept":
+                        update["hitdietype"] = 8;
+                        update["spellcasting_ability"] = "@{charisma_mod}+";
                         update["strength_save_prof"] = "(@{pb})";
                         update["dexterity_save_prof"] = 0;
-                        update["constitution_save_prof"] = "(@{pb})";
+                        update["constitution_save_prof"] = 0;
                         update["intelligence_save_prof"] = 0;
-                        update["wisdom_save_prof"] = 0;
+                        update["wisdom_save_prof"] = "(@{pb})";
                         update["charisma_save_prof"] = 0;
-                        update["class_resource_name"] = "Rage";
+                        update["class_resource_name"] = "Talent Points";
                         break;
                     case "Bard":
                         update["hitdietype"] = 8;
