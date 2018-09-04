@@ -9358,7 +9358,7 @@
                         update["class_resource_name"] = "Talent Points";
                         break;
                     case "Sentinel":
-                        update["hitdietype"] = 10;
+                        update["hitdietype"] = ;
                         update["spellcasting_ability"] = "@{charisma_mod}+";
                         update["strength_save_prof"] = 0;
                         update["dexterity_save_prof"] = 0;
@@ -9368,68 +9368,25 @@
                         update["charisma_save_prof"] = "(@{pb})";
                         update["class_resource_name"] = "Tech Slots";
                         break;
-                    case "Paladin":
-                        update["hitdietype"] = 10;
-                        update["spellcasting_ability"] = "@{charisma_mod}+";
-                        update["strength_save_prof"] = 0;
-                        update["dexterity_save_prof"] = 0;
-                        update["constitution_save_prof"] = 0;
-                        update["intelligence_save_prof"] = 0;
-                        update["wisdom_save_prof"] = "(@{pb})";
-                        update["charisma_save_prof"] = "(@{pb})";
-                        update["class_resource_name"] = "Divine Sense";
-                        break;
-                    case "Ranger":
-                        update["hitdietype"] = 10;
-                        update["spellcasting_ability"] = "@{wisdom_mod}+";
-                        update["strength_save_prof"] = "(@{pb})";
-                        update["dexterity_save_prof"] = "(@{pb})";
-                        update["constitution_save_prof"] = 0;
-                        update["intelligence_save_prof"] = 0;
-                        update["wisdom_save_prof"] = 0;
-                        update["charisma_save_prof"] = 0;
-                        update["class_resource_name"] = "";
-                        break;
-                    case "Rogue":
+                    case "Specialist":
                         update["hitdietype"] = 8;
-                        update["spellcasting_ability"] = "0*";
+                        update["spellcasting_ability"] = "@{intelligence_mod}+";
                         update["strength_save_prof"] = 0;
                         update["dexterity_save_prof"] = "(@{pb})";
                         update["constitution_save_prof"] = 0;
                         update["intelligence_save_prof"] = "(@{pb})";
                         update["wisdom_save_prof"] = 0;
                         update["charisma_save_prof"] = 0;
+                        update["class_resource_name"] = "Talent Points";
                         break;
-                    case "Sorcerer":
-                        update["hitdietype"] = 6;
-                        update["spellcasting_ability"] = "@{charisma_mod}+";
-                        update["strength_save_prof"] = 0;
+                    case "Warrior":
+                        update["hitdietype"] = 10;
+                        update["spellcasting_ability"] = "0*";
+                        update["strength_save_prof"] = "(@{pb})";
                         update["dexterity_save_prof"] = 0;
                         update["constitution_save_prof"] = "(@{pb})";
                         update["intelligence_save_prof"] = 0;
                         update["wisdom_save_prof"] = 0;
-                        update["charisma_save_prof"] = "(@{pb})";
-                        update["class_resource_name"] = "Sorcery Points";
-                        break;
-                    case "Warlock":
-                        update["hitdietype"] = 8;
-                        update["spellcasting_ability"] = "@{charisma_mod}+";
-                        update["strength_save_prof"] = 0;
-                        update["dexterity_save_prof"] = 0;
-                        update["constitution_save_prof"] = 0;
-                        update["intelligence_save_prof"] = 0;
-                        update["wisdom_save_prof"] = "(@{pb})";
-                        update["charisma_save_prof"] = "(@{pb})";
-                        update["class_resource_name"] = "Spell Slots";
-                        break;
-                    case "Wizard":
-                        update["hitdietype"] = 6;
-                        update["spellcasting_ability"] = "@{intelligence_mod}+";
-                        update["strength_save_prof"] = 0;
-                        update["dexterity_save_prof"] = 0;
-                        update["constitution_save_prof"] = 0;
-                        update["intelligence_save_prof"] = "(@{pb})";
-                        update["wisdom_save_prof"] = "(@{pb})";
                         update["charisma_save_prof"] = 0;
                         break;
                 }
