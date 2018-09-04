@@ -9313,16 +9313,16 @@
                         update["charisma_save_prof"] = 0;
                         update["class_resource_name"] = "Talent Points";
                         break;
-                    case "Bard":
+                    case "Cybermancer":
                         update["hitdietype"] = 8;
-                        update["spellcasting_ability"] = "@{charisma_mod}+";
+                        update["spellcasting_ability"] = "@{intelligence_mod}+";
                         update["strength_save_prof"] = 0;
-                        update["dexterity_save_prof"] = "(@{pb})";
+                        update["dexterity_save_prof"] = 0;
                         update["constitution_save_prof"] = 0;
-                        update["intelligence_save_prof"] = 0;
+                        update["intelligence_save_prof"] = "(@{pb})";
                         update["wisdom_save_prof"] = 0;
                         update["charisma_save_prof"] = "(@{pb})";
-                        update["class_resource_name"] = "Bardic Inspiration";
+                        update["class_resource_name"] = "Talent Slots";
                         break;
                     case "Cleric":
                         update["hitdietype"] = 8;
