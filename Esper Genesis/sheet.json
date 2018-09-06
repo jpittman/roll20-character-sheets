@@ -1,10 +1,10 @@
 {
-    "html": "5th Edition OGL by Roll20.html",
-    "css": "5th Edition OGL by Roll20.css",
-    "authors": "Steve K. and Phil B.",
+    "html": "Esper Genesis.html",
+    "css": "Esper Genesis.css",
+    "authors": "VidoeStoreCowby, based upon work done by Steve K. and Phil B.",
     "roll20userid": "5047,141325",
-    "preview": "5th Edition OGL by Roll20.png",
-    "compendium": "dnd5e",
+    "preview": "Esper Genesis.png",
+    "compendium": "",
     "instructions": "Compatible for use with Dungeons and Dragons as well as any other 5th Edition OGL system. Check out the 5th Edition OGL [Sheet Guide](https://wiki.roll20.net/5th_Edition_OGL_by_Roll20) for tips and tricks on getting the most out of the 5th Edition sheet.\n\n* Drag and Drop compatible with the [Roll20 Compendium](https://app.roll20.net/compendium/dnd5e/BookIndex). Instantly import spells, items, and NPCs into your game.\n* Slim and simple highly performant design.\n* Auto calculations and workers help remove bookkeeping and speed up your game.\n* Built in roll buttons and templates make using your abilities easy and the results pop.\n* Customizable skills, attacks, and spells.\n* Multi-classing and custom classes.\n* Settings for advantage, GM whispered rolls, easy damage output, simple inventory and much more.\n* NPC Sheet with traits and rollable actions.",
     "useroptions": [
         {
@@ -20,9 +20,9 @@
             "attribute": "l1mancer_status",
             "displayname": "USE LEVEL 1 CHARACTERMANCER FOR NEW CHARACTERS:",
             "displaytranslationkey": "use-charactermancer-for-new:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
-                "Yes| ", 
+                "Yes| ",
                 "No|completed"
             ],
             "optiontranslationkeys": ["yes","no"],
@@ -33,10 +33,10 @@
             "attribute": "rtype",
             "displayname": "Roll Queries",
             "displaytranslationkey": "roll-queries:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
-                "Always Roll Advantage|{{always=1}} {{r2=[[1d20", 
-                "Advantage Toggle|@{advantagetoggle}", 
+                "Always Roll Advantage|{{always=1}} {{r2=[[1d20",
+                "Advantage Toggle|@{advantagetoggle}",
                 "Query Advantage|{{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[1d20|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[1d20}",
                 "Never Roll Advantage|{{normal=1}} {{r2=[[0d20"
             ],
@@ -49,9 +49,9 @@
             "attribute": "wtype",
             "displayname": "Whisper Rolls to GM",
             "displaytranslationkey": "whisp-rolls-gm:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
-                "Never Whisper Rolls|", 
+                "Never Whisper Rolls|",
                 "Whisper Toggle|@{whispertoggle}",
                 "Query Whisper|?{Whisper?|Public Roll,|Whisper Roll,/w gm }",
                 "Always Whisper Rolls|/w gm "
@@ -65,7 +65,7 @@
             "attribute": "dtype",
             "displayname": "Auto Damage Roll",
             "displaytranslationkey": "auto-dmg-roll:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Don't Auto Roll Damage|pick",
                 "Auto Roll Damage & Crit|full"
@@ -88,7 +88,7 @@
             "attribute": "pb_type",
             "displayname": "PROFICIENCY BONUS:",
             "displaytranslationkey": "prof-bonus:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "By Level (Default)|level",
                 "Proficency Die (DMG)|die",
@@ -157,7 +157,7 @@
             "attribute": "charname_output",
             "displayname": "Add Character Name To Templates",
             "displaytranslationkey": "add-char-to-templates:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "On|{{charname=@{character_name}}}",
                 "Off|charname=@{character_name}"
@@ -171,7 +171,7 @@
             "attribute": "level_calculations",
             "displayname": "AUTO LEVEL CALCULATIONS:",
             "displaytranslationkey": "level-calculations:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "On|on",
                 "Off|off"
@@ -185,7 +185,7 @@
             "attribute": "encumberance_setting",
             "displayname": "Encumbrance",
             "displaytranslationkey": "encumbrance:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Simple|off",
                 "Variant (PHB p176)|on",
@@ -200,7 +200,7 @@
             "attribute": "simpleinventory",
             "displayname": "Inventory",
             "displaytranslationkey": "inventory:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Compendium Compatible|complex",
                 "Simple|simple"
@@ -214,7 +214,7 @@
             "attribute": "simpletraits",
             "displayname": "FEATURES & TRAITS",
             "displaytranslationkey": "feats-traits-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Compendium Compatible|complex",
                 "Simple|simple"
@@ -228,7 +228,7 @@
             "attribute": "simpleproficencies",
             "displayname": "PROFICIENCIES & LANGUAGES",
             "displaytranslationkey": "prof-langs-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Compendium Compatible|complex",
                 "Simple|simple"
@@ -242,7 +242,7 @@
             "attribute": "npc_name_flag",
             "displayname": "NPC NAME IN ROLLS:",
             "displaytranslationkey": "npc-name-in-rolls:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "Show|{{name=@{npc_name}}}",
                 "Hide|0"
@@ -256,7 +256,7 @@
             "attribute": "ammotracking",
             "displayname": "Ammo Tracking (API Required)",
             "displaytranslationkey": "ammo-tracking:-u",
-            "type": "select", 
+            "type": "select",
             "options": [
                 "On|on",
                 "Off|off"
