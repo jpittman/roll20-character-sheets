@@ -1281,7 +1281,7 @@ button[type=roll] * {
     top: 2px;
 }
 
-.sheet-cantrips {
+.sheet-prime-powers {
     display: inline-block;
     border: 1px solid black;
     height: 25px;
@@ -1291,7 +1291,7 @@ button[type=roll] * {
     margin-left: -20px;
 }
 
-.sheet-cantrips span {
+.sheet-prime-powers span {
     display: block;
     font-size: 9px;
     line-height: 12px;

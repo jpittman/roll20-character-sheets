@@ -1932,12 +1932,12 @@
                 <div class="level">
                     <span class="label">0</span>
                 </div>
-                <div class="cantrips">
-                    <span class="label" data-i18n="cantrips-u">CANTRIPS</span>
+                <div class="prime-powers">
+                    <span class="label" data-i18n="prime-powers-u">PRIME POWERS</span>
                 </div>
             </div>
             <div class="spell-container">
-                <fieldset class="repeating_spell-cantrip">
+                <fieldset class="repeating_spell-prime-powers">
                     <div class="spell">
                         <input class="options-flag" type="checkbox" name="attr_options-flag" checked="checked"><span>y</span>
                         <div class="options">
@@ -2046,11 +2046,11 @@
                                     <span data-i18n="add-ability-mod-u">ADD ABILITY MOD TO DAMAGE OR HEALING</span>
                                 </div>
                                 <div class="row">
-                                    <span data-i18n="cantrip-progression:-u">CANTRIP PROGRESSION</span>
+                                    <span data-i18n="prime-power-progression:-u">PRIME POWER PROGRESSION</span>
                                     <select name="attr_spell_damage_progression">
                                         <option value="" selected="selected" data-i18n="none-u">NONE</option>
-                                        <option value="Cantrip Dice" data-i18n="cantrip-dice-u">CANTRIP DICE</option>
-                                        <option value="Cantrip Beam" data-i18n="cantrip-beam-u">CANTRIP BEAM</option>
+                                        <option value="Prime Power Dice" data-i18n="prime-power-dice-u">PRIME POWER DICE</option>
+                                        <option value="Prime Power Beam" data-i18n="prime-power-beam-u">PRIME POWER BEAM</option>
                                     </select>
                                 </div>
                                 <div class="row">
@@ -2104,7 +2104,7 @@
                                 <textarea name="attr_spellathigherlevels" style="height: 36px; min-height: 36px;"></textarea>
                             </div>
                             <input type="hidden" name="attr_spellattackid">
-                            <input type="hidden" name="attr_spelllevel" value="cantrip">
+                            <input type="hidden" name="attr_spelllevel" value="prime power">
                         </div>
                         <div class="display">
                             <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
@@ -6275,11 +6275,11 @@
         update_ac();
     });
 
-    on("change:repeating_spell-cantrip:spellname change:repeating_spell-1:spellname change:repeating_spell-1:spellprepared change:repeating_spell-2:spellname change:repeating_spell-2:spellprepared change:repeating_spell-3:spellname change:repeating_spell-3:spellprepared change:repeating_spell-4:spellname change:repeating_spell-4:spellprepared change:repeating_spell-5:spellname change:repeating_spell-5:spellprepared change:repeating_spell-6:spellname change:repeating_spell-6:spellprepared change:repeating_spell-7:spellname change:repeating_spell-7:spellprepared change:repeating_spell-8:spellname change:repeating_spell-8:spellprepared change:repeating_spell-9:spellname change:repeating_spell-9:spellprepared change:repeating_spell-cantrip:spellrange change:repeating_spell-1:spellrange change:repeating_spell-2:spellrange change:repeating_spell-3:spellrange change:repeating_spell-4:spellrange change:repeating_spell-5:spellrange change:repeating_spell-6:spellrange change:repeating_spell-7:spellrange change:repeating_spell-8:spellrange change:repeating_spell-9:spellrange change:repeating_spell-cantrip:spelltarget change:repeating_spell-1:spelltarget change:repeating_spell-2:spelltarget change:repeating_spell-3:spelltarget change:repeating_spell-4:spelltarget change:repeating_spell-5:spelltarget change:repeating_spell-6:spelltarget change:repeating_spell-7:spelltarget change:repeating_spell-8:spelltarget change:repeating_spell-9:spelltarget change:repeating_spell-cantrip:spelldamage change:repeating_spell-1:spelldamage change:repeating_spell-2:spelldamage change:repeating_spell-3:spelldamage change:repeating_spell-4:spelldamage change:repeating_spell-5:spelldamage change:repeating_spell-6:spelldamage change:repeating_spell-7:spelldamage change:repeating_spell-8:spelldamage change:repeating_spell-9:spelldamage change:repeating_spell-cantrip:spelldamagetype change:repeating_spell-1:spelldamagetype change:repeating_spell-2:spelldamagetype change:repeating_spell-3:spelldamagetype change:repeating_spell-4:spelldamagetype change:repeating_spell-5:spelldamagetype change:repeating_spell-6:spelldamagetype change:repeating_spell-7:spelldamagetype change:repeating_spell-8:spelldamagetype change:repeating_spell-9:spelldamagetype change:repeating_spell-cantrip:spelldamage2 change:repeating_spell-1:spelldamage2 change:repeating_spell-2:spelldamage2 change:repeating_spell-3:spelldamage2 change:repeating_spell-4:spelldamage2 change:repeating_spell-5:spelldamage2 change:repeating_spell-6:spelldamage2 change:repeating_spell-7:spelldamage2 change:repeating_spell-8:spelldamage2 change:repeating_spell-9:spelldamage2 change:repeating_spell-cantrip:spelldamagetype2 change:repeating_spell-1:spelldamagetype2 change:repeating_spell-2:spelldamagetype2 change:repeating_spell-3:spelldamagetype2 change:repeating_spell-4:spelldamagetype2 change:repeating_spell-5:spelldamagetype2 change:repeating_spell-6:spelldamagetype2 change:repeating_spell-7:spelldamagetype2 change:repeating_spell-8:spelldamagetype2 change:repeating_spell-9:spelldamagetype2 change:repeating_spell-cantrip:spellhealing change:repeating_spell-1:spellhealing change:repeating_spell-2:spellhealing change:repeating_spell-3:spellhealing change:repeating_spell-4:spellhealing change:repeating_spell-5:spellhealing change:repeating_spell-6:spellhealing change:repeating_spell-7:spellhealing change:repeating_spell-8:spellhealing change:repeating_spell-9:spellhealing change:repeating_spell-cantrip:spelldmgmod change:repeating_spell-1:spelldmgmod change:repeating_spell-2:spelldmgmod change:repeating_spell-3:spelldmgmod change:repeating_spell-4:spelldmgmod change:repeating_spell-5:spelldmgmod change:repeating_spell-6:spelldmgmod change:repeating_spell-7:spelldmgmod change:repeating_spell-8:spelldmgmod change:repeating_spell-9:spelldmgmod change:repeating_spell-cantrip:spellsave change:repeating_spell-1:spellsave change:repeating_spell-2:spellsave change:repeating_spell-3:spellsave change:repeating_spell-4:spellsave change:repeating_spell-5:spellsave change:repeating_spell-6:spellsave change:repeating_spell-7:spellsave change:repeating_spell-8:spellsave change:repeating_spell-9:spellsave change:repeating_spell-cantrip:spellsavesuccess change:repeating_spell-1:spellsavesuccess change:repeating_spell-2:spellsavesuccess change:repeating_spell-3:spellsavesuccess change:repeating_spell-4:spellsavesuccess change:repeating_spell-5:spellsavesuccess change:repeating_spell-6:spellsavesuccess change:repeating_spell-7:spellsavesuccess change:repeating_spell-8:spellsavesuccess change:repeating_spell-9:spellsavesuccess change:repeating_spell-cantrip:spellhldie change:repeating_spell-1:spellhldie change:repeating_spell-2:spellhldie change:repeating_spell-3:spellhldie change:repeating_spell-4:spellhldie change:repeating_spell-5:spellhldie change:repeating_spell-6:spellhldie change:repeating_spell-7:spellhldie change:repeating_spell-8:spellhldie change:repeating_spell-9:spellhldie change:repeating_spell-cantrip:spellhldietype change:repeating_spell-1:spellhldietype change:repeating_spell-2:spellhldietype change:repeating_spell-3:spellhldietype change:repeating_spell-4:spellhldietype change:repeating_spell-5:spellhldietype change:repeating_spell-6:spellhldietype change:repeating_spell-7:spellhldietype change:repeating_spell-8:spellhldietype change:repeating_spell-9:spellhldietype change:repeating_spell-cantrip:spell_updateflag change:repeating_spell-1:spell_updateflag change:repeating_spell-2:spell_updateflag change:repeating_spell-3:spell_updateflag change:repeating_spell-4:spell_updateflag change:repeating_spell-5:spell_updateflag change:repeating_spell-6:spell_updateflag change:repeating_spell-7:spell_updateflag change:repeating_spell-8:spell_updateflag change:repeating_spell-9:spell_updateflag change:repeating_spell-cantrip:spellattack change:repeating_spell-1:spellattack change:repeating_spell-2:spellattack change:repeating_spell-3:spellattack change:repeating_spell-4:spellattack change:repeating_spell-5:spellattack change:repeating_spell-6:spellattack change:repeating_spell-7:spellattack change:repeating_spell-8:spellattack change:repeating_spell-9:spellattack change:repeating_spell-cantrip:spellhlbonus change:repeating_spell-1:spellhlbonus change:repeating_spell-2:spellhlbonus change:repeating_spell-3:spellhlbonus change:repeating_spell-4:spellhlbonus change:repeating_spell-5:spellhlbonus change:repeating_spell-6:spellhlbonus change:repeating_spell-7:spellhlbonus change:repeating_spell-8:spellhlbonus change:repeating_spell-9:spellhlbonus change:repeating_spell-cantrip:includedesc change:repeating_spell-1:includedesc change:repeating_spell-2:includedesc change:repeating_spell-3:includedesc change:repeating_spell-4:includedesc change:repeating_spell-5:includedesc change:repeating_spell-6:includedesc change:repeating_spell-7:includedesc change:repeating_spell-8:includedesc change:repeating_spell-9:includedesc change:repeating_spell-cantrip:spellathigherlevels change:repeating_spell-1:spellathigherlevels change:repeating_spell-2:spellathigherlevels change:repeating_spell-3:spellathigherlevels change:repeating_spell-4:spellathigherlevels change:repeating_spell-5:spellathigherlevels change:repeating_spell-6:spellathigherlevels change:repeating_spell-7:spellathigherlevels change:repeating_spell-8:spellathigherlevels change:repeating_spell-9:spellathigherlevels change:repeating_spell-cantrip:spelldescription change:repeating_spell-1:spelldescription change:repeating_spell-2:spelldescription change:repeating_spell-3:spelldescription change:repeating_spell-4:spelldescription change:repeating_spell-5:spelldescription change:repeating_spell-6:spelldescription change:repeating_spell-7:spelldescription change:repeating_spell-8:spelldescription change:repeating_spell-9:spelldescription change:repeating_spell-cantrip:innate change:repeating_spell-1:innate change:repeating_spell-2:innate change:repeating_spell-3:innate change:repeating_spell-4:innate change:repeating_spell-5:innate change:repeating_spell-6:innate change:repeating_spell-7:innate change:repeating_spell-8:innate change:repeating_spell-9:innate change:repeating_spell-cantrip:spell_ability change:repeating_spell-1:spell_ability change:repeating_spell-2:spell_ability change:repeating_spell-3:spell_ability change:repeating_spell-4:spell_ability change:repeating_spell-5:spell_ability change:repeating_spell-6:spell_ability change:repeating_spell-7:spell_ability change:repeating_spell-8:spell_ability change:repeating_spell-9:spell_ability change:repeating_spell-cantrip:spell_damage_progression", function(eventinfo) {
+    on("change:repeating_spell-prime_power:spellname change:repeating_spell-1:spellname change:repeating_spell-1:spellprepared change:repeating_spell-2:spellname change:repeating_spell-2:spellprepared change:repeating_spell-3:spellname change:repeating_spell-3:spellprepared change:repeating_spell-4:spellname change:repeating_spell-4:spellprepared change:repeating_spell-5:spellname change:repeating_spell-5:spellprepared change:repeating_spell-6:spellname change:repeating_spell-6:spellprepared change:repeating_spell-7:spellname change:repeating_spell-7:spellprepared change:repeating_spell-8:spellname change:repeating_spell-8:spellprepared change:repeating_spell-9:spellname change:repeating_spell-9:spellprepared change:repeating_spell-prime_power:spellrange change:repeating_spell-1:spellrange change:repeating_spell-2:spellrange change:repeating_spell-3:spellrange change:repeating_spell-4:spellrange change:repeating_spell-5:spellrange change:repeating_spell-6:spellrange change:repeating_spell-7:spellrange change:repeating_spell-8:spellrange change:repeating_spell-9:spellrange change:repeating_spell-prime_power:spelltarget change:repeating_spell-1:spelltarget change:repeating_spell-2:spelltarget change:repeating_spell-3:spelltarget change:repeating_spell-4:spelltarget change:repeating_spell-5:spelltarget change:repeating_spell-6:spelltarget change:repeating_spell-7:spelltarget change:repeating_spell-8:spelltarget change:repeating_spell-9:spelltargetg change:repeating_spell-prime_power:spelldamage change:repeating_spell-1:spelldamage change:repeating_spell-2:spelldamage change:repeating_spell-3:spelldamage change:repeating_spell-4:spelldamage change:repeating_spell-5:spelldamage change:repeating_spell-6:spelldamage change:repeating_spell-7:spelldamage change:repeating_spell-8:spelldamage change:repeating_spell-9:spelldamage change:repeating_spell-prime_power:spelldamagetype change:repeating_spell-1:spelldamagetype change:repeating_spell-2:spelldamagetype change:repeating_spell-3:spelldamagetype change:repeating_spell-4:spelldamagetype change:repeating_spell-5:spelldamagetype change:repeating_spell-6:spelldamagetype change:repeating_spell-7:spelldamagetype change:repeating_spell-8:spelldamagetype change:repeating_spell-9:spelldamagetype change:repeating_spell-prime_power:spelldamage2 change:repeating_spell-1:spelldamage2 change:repeating_spell-2:spelldamage2 change:repeating_spell-3:spelldamage2 change:repeating_spell-4:spelldamage2 change:repeating_spell-5:spelldamage2 change:repeating_spell-6:spelldamage2 change:repeating_spell-7:spelldamage2 change:repeating_spell-8:spelldamage2 change:repeating_spell-9:spelldamage2 change:repeating_spell-prime_power:spelldamagetype2 change:repeating_spell-1:spelldamagetype2 change:repeating_spell-2:spelldamagetype2 change:repeating_spell-3:spelldamagetype2 change:repeating_spell-4:spelldamagetype2 change:repeating_spell-5:spelldamagetype2 change:repeating_spell-6:spelldamagetype2 change:repeating_spell-7:spelldamagetype2 change:repeating_spell-8:spelldamagetype2 change:repeating_spell-9:spelldamagetype2 change:repeating_spell-prime_powers:spellhealing change:repeating_spell-1:spellhealing change:repeating_spell-2:spellhealing change:repeating_spell-3:spellhealing change:repeating_spell-4:spellhealing change:repeating_spell-5:spellhealing change:repeating_spell-6:spellhealing change:repeating_spell-7:spellhealing change:repeating_spell-8:spellhealing change:repeating_spell-9:spellhealing change:repeating_spell-prime_power:spelldmgmod change:repeating_spell-1:spelldmgmod change:repeating_spell-2:spelldmgmod change:repeating_spell-3:spelldmgmod change:repeating_spell-4:spelldmgmod change:repeating_spell-5:spelldmgmod change:repeating_spell-6:spelldmgmod change:repeating_spell-7:spelldmgmod change:repeating_spell-8:spelldmgmod change:repeating_spell-9:spelldmgmod change:repeating_spell-prime_power:spellsave change:repeating_spell-1:spellsave change:repeating_spell-2:spellsave change:repeating_spell-3:spellsave change:repeating_spell-4:spellsave change:repeating_spell-5:spellsave change:repeating_spell-6:spellsave change:repeating_spell-7:spellsave change:repeating_spell-8:spellsave change:repeating_spell-9:spellsave change:repeating_spell-prime_power:spellsavesuccess change:repeating_spell-1:spellsavesuccess change:repeating_spell-2:spellsavesuccess change:repeating_spell-3:spellsavesuccess change:repeating_spell-4:spellsavesuccess change:repeating_spell-5:spellsavesuccess change:repeating_spell-6:spellsavesuccess change:repeating_spell-7:spellsavesuccess change:repeating_spell-8:spellsavesuccess change:repeating_spell-9:spellsavesuccess change:repeating_spell-prime_power:spellhldie change:repeating_spell-1:spellhldie change:repeating_spell-2:spellhldie change:repeating_spell-3:spellhldie change:repeating_spell-4:spellhldie change:repeating_spell-5:spellhldie change:repeating_spell-6:spellhldie change:repeating_spell-7:spellhldie change:repeating_spell-8:spellhldie change:repeating_spell-9:spellhldie change:repeating_spell-prime_power:spellhldietype change:repeating_spell-1:spellhldietype change:repeating_spell-2:spellhldietype change:repeating_spell-3:spellhldietype change:repeating_spell-4:spellhldietype change:repeating_spell-5:spellhldietype change:repeating_spell-6:spellhldietype change:repeating_spell-7:spellhldietype change:repeating_spell-8:spellhldietype change:repeating_spell-9:spellhldietype change:repeating_spell-prime_power:spell_updateflag change:repeating_spell-1:spell_updateflag change:repeating_spell-2:spell_updateflag change:repeating_spell-3:spell_updateflag change:repeating_spell-4:spell_updateflag change:repeating_spell-5:spell_updateflag change:repeating_spell-6:spell_updateflag change:repeating_spell-7:spell_updateflag change:repeating_spell-8:spell_updateflag change:repeating_spell-9:spell_updateflag change:repeating_spell-prime_power:spellattack change:repeating_spell-1:spellattack change:repeating_spell-2:spellattack change:repeating_spell-3:spellattack change:repeating_spell-4:spellattack change:repeating_spell-5:spellattack change:repeating_spell-6:spellattack change:repeating_spell-7:spellattack change:repeating_spell-8:spellattack change:repeating_spell-9:spellattack change:repeating_spell-prime_power:spellhlbonus change:repeating_spell-1:spellhlbonus change:repeating_spell-2:spellhlbonus change:repeating_spell-3:spellhlbonus change:repeating_spell-4:spellhlbonus change:repeating_spell-5:spellhlbonus change:repeating_spell-6:spellhlbonus change:repeating_spell-7:spellhlbonus change:repeating_spell-8:spellhlbonus change:repeating_spell-9:spellhlbonus change:repeating_spell-prime_power:includedesc change:repeating_spell-1:includedesc change:repeating_spell-2:includedesc change:repeating_spell-3:includedesc change:repeating_spell-4:includedesc change:repeating_spell-5:includedesc change:repeating_spell-6:includedesc change:repeating_spell-7:includedesc change:repeating_spell-8:includedesc change:repeating_spell-9:includedesc change:repeating_spell-prime_power:spellathigherlevels change:repeating_spell-1:spellathigherlevels change:repeating_spell-2:spellathigherlevels change:repeating_spell-3:spellathigherlevels change:repeating_spell-4:spellathigherlevels change:repeating_spell-5:spellathigherlevels change:repeating_spell-6:spellathigherlevels change:repeating_spell-7:spellathigherlevels change:repeating_spell-8:spellathigherlevels change:repeating_spell-9:spellathigherlevels change:repeating_spell-prime_power:spelldescription change:repeating_spell-1:spelldescription change:repeating_spell-2:spelldescription change:repeating_spell-3:spelldescription change:repeating_spell-4:spelldescription change:repeating_spell-5:spelldescription change:repeating_spell-6:spelldescription change:repeating_spell-7:spelldescription change:repeating_spell-8:spelldescription change:repeating_spell-9:spelldescription change:repeating_spell-prime_power:innate change:repeating_spell-1:innate change:repeating_spell-2:innate change:repeating_spell-3:innate change:repeating_spell-4:innate change:repeating_spell-5:innate change:repeating_spell-6:innate change:repeating_spell-7:innate change:repeating_spell-8:innate change:repeating_spell-9:innate change:repeating_spell-prime_power:spell_ability change:repeating_spell-1:spell_ability change:repeating_spell-2:spell_ability change:repeating_spell-3:spell_ability change:repeating_spell-4:spell_ability change:repeating_spell-5:spell_ability change:repeating_spell-6:spell_ability change:repeating_spell-7:spell_ability change:repeating_spell-8:spell_ability change:repeating_spell-9:spell_ability change:repeating_spell-prime_power:spell_damage_progression", function(eventinfo) {
         if(eventinfo.sourceType && eventinfo.sourceType === "sheetworker") {
             return;
         }
-        var regex_result = /^(repeating_spell-(?:cantrip|\d)_[^_]+)_.+$/.exec(eventinfo.sourceAttribute);
+        var regex_result = /^(repeating_spell-(?:prime_power|\d)_[^_]+)_.+$/.exec(eventinfo.sourceAttribute);
         if(regex_result) {
             var repeating_source = regex_result[1];
             getAttrs([repeating_source + "_spellattackid", repeating_source + "_spelllevel"], function(v) {
@@ -6293,7 +6293,7 @@
         }
     });
 
-    on("change:repeating_spell-cantrip:spelloutput change:repeating_spell-1:spelloutput change:repeating_spell-2:spelloutput change:repeating_spell-3:spelloutput change:repeating_spell-4:spelloutput change:repeating_spell-5:spelloutput change:repeating_spell-6:spelloutput change:repeating_spell-7:spelloutput change:repeating_spell-8:spelloutput change:repeating_spell-9:spelloutput", function(eventinfo) {
+    on("change:repeating_spell-prime_power:spelloutput change:repeating_spell-1:spelloutput change:repeating_spell-2:spelloutput change:repeating_spell-3:spelloutput change:repeating_spell-4:spelloutput change:repeating_spell-5:spelloutput change:repeating_spell-6:spelloutput change:repeating_spell-7:spelloutput change:repeating_spell-8:spelloutput change:repeating_spell-9:spelloutput", function(eventinfo) {
         if(eventinfo.sourceType && eventinfo.sourceType === "sheetworker") {
             return;
         }
@@ -6324,7 +6324,7 @@
         });
     });
 
-    on("change:repeating_spell-cantrip:spellathigherlevels change:repeating_spell-1:spellathigherlevels change:repeating_spell-2:spellathigherlevels change:repeating_spell-3:spellathigherlevels change:repeating_spell-4:spellathigherlevels change:repeating_spell-5:spellathigherlevels change:repeating_spell-6:spellathigherlevels change:repeating_spell-7:spellathigherlevels change:repeating_spell-8:spellathigherlevels change:repeating_spell-9:spellathigherlevels", function(eventinfo) {
+    on("change:repeating_spell-prime_power:spellathigherlevels change:repeating_spell-1:spellathigherlevels change:repeating_spell-2:spellathigherlevels change:repeating_spell-3:spellathigherlevels change:repeating_spell-4:spellathigherlevels change:repeating_spell-5:spellathigherlevels change:repeating_spell-6:spellathigherlevels change:repeating_spell-7:spellathigherlevels change:repeating_spell-8:spellathigherlevels change:repeating_spell-9:spellathigherlevels", function(eventinfo) {
         if(eventinfo.sourceType && eventinfo.sourceType === "sheetworker") {
             return;
         }
@@ -6621,7 +6621,7 @@
         setAttrs(update, {silent: true});
     });
 
-    on("remove:repeating_spell-cantrip remove:repeating_spell-1 remove:repeating_spell-2 remove:repeating_spell-3 remove:repeating_spell-4 remove:repeating_spell-5 remove:repeating_spell-6 remove:repeating_spell-7 remove:repeating_spell-8 remove:repeating_spell-9", function(eventinfo) {
+    on("remove:repeating_spell-prime_power remove:repeating_spell-1 remove:repeating_spell-2 remove:repeating_spell-3 remove:repeating_spell-4 remove:repeating_spell-5 remove:repeating_spell-6 remove:repeating_spell-7 remove:repeating_spell-8 remove:repeating_spell-9", function(eventinfo) {
         var attackid = eventinfo.removedInfo[eventinfo.sourceAttribute + "_spellattackid"];
         if(attackid) {
             remove_attack(attackid);
@@ -7123,7 +7123,7 @@
             }
         };
         if(category === "Spells") {
-            var lvl = page.data["Level"] && page.data["Level"] > 0 ? page.data["Level"] : "cantrip";
+            var lvl = page.data["Level"] && page.data["Level"] > 0 ? page.data["Level"] : "prime power";
             update["repeating_spell-" + lvl + "_" + id + "_spelllevel"] = lvl;
             if(page.data["spellcasting_ability"]) {
                 update["repeating_spell-" + lvl + "_" + id + "_spell_ability"] = page.data["spellcasting_ability"];
@@ -7169,7 +7169,7 @@
             if(page.data["Higher Spell Slot Die"]) {update["repeating_spell-" + lvl + "_" + id + "_spellhldietype"] = page.data["Higher Spell Slot Die"]};
             if(page.data["Higher Spell Slot Bonus"]) {update["repeating_spell-" + lvl + "_" + id + "_spellhlbonus"] = page.data["Higher Spell Slot Bonus"]};
             if(page.data["Higher Spell Slot Desc"]) {update["repeating_spell-" + lvl + "_" + id + "_spellathigherlevels"] = page.data["Higher Spell Slot Desc"]};
-            if(page.data["data-Cantrip Scaling"] && lvl == "cantrip") {update["repeating_spell-" + lvl + "_" + id + "_spell_damage_progression"] = "Cantrip " + page.data["data-Cantrip Scaling"].charAt(0).toUpperCase() + page.data["data-Cantrip Scaling"].slice(1);};
+            if(page.data["data-Prime-Power Scaling"] && lvl == "prime_power") {update["repeating_spell-" + lvl + "_" + id + "_spell_damage_progression"] = "Prime Power " + page.data["data-Prime-Power Scaling"].charAt(0).toUpperCase() + page.data["data-Prime-Power Scaling"].slice(1);};
             if(page.data["data-description"]) { update["repeating_spell-" + lvl + "_" + id + "_spelldescription"] = page.data["data-description"]};
             update["repeating_spell-" + lvl + "_" + id + "_options-flag"] = "0";
         };
@@ -8355,7 +8355,7 @@
 
             if(v["repeating_spell-" + lvl + "_" + spellid + "_spelldamage"] && v["repeating_spell-" + lvl + "_" + spellid + "_spelldamage"] != "") {
                 update["repeating_attack_" + attackid + "_dmgflag"] = "{{damage=1}} {{dmg1flag=1}}";
-                if(v["repeating_spell-" + lvl + "_" + spellid + "_spell_damage_progression"] && v["repeating_spell-" + lvl + "_" + spellid + "_spell_damage_progression"] === "Cantrip Dice") {
+                if(v["repeating_spell-" + lvl + "_" + spellid + "_spell_damage_progression"] && v["repeating_spell-" + lvl + "_" + spellid + "_spell_damage_progression"] === "Prime Power Dice") {
                     update["repeating_attack_" + attackid + "_dmgbase"] = "[[round((@{level} + 1) / 6 + 0.5)]]" + v["repeating_spell-" + lvl + "_" + spellid + "_spelldamage"].substring(1);
                 }
                 else {
@@ -8657,7 +8657,7 @@
                 }
                 if(v["repeating_attack_" + attackid + "_dmgflag"] && v["repeating_attack_" + attackid + "_dmgflag"] != 0) {
                     if(spellattack === true && dmgbase.indexOf("[[round((@{level} + 1) / 6 + 0.5)]]") > -1) {
-                        // SPECIAL CANTRIP DAMAGE
+                        // SPECIAL PRIME POWER DAMAGE
                         dmgdiestring = Math.round(((parseInt(v["level"], 10) + 1) / 6) + 0.5).toString()
                         dmg = dmgdiestring + dmgbase.substring(dmgbase.lastIndexOf("d"));
                         if(dmgattr + dmgmod != 0) {
@@ -10495,9 +10495,9 @@
                                                 };
                                                 // Set all spells without a given modifier to 'spell'
                                                 var spgetList = [];
-                                                getSectionIDs("spell-cantrip", function(secIds0) {
+                                                getSectionIDs("spell-prime_power", function(secIds0) {
                                                     _.each(secIds0, function(x) {
-                                                        spgetList.push("repeating_spell-cantrip_" + x + "_spell_ability");
+                                                        spgetList.push("repeating_spell-prime_power_" + x + "_spell_ability");
                                                     });
                                                     getSectionIDs("spell-1", function(secIds1) {
                                                         _.each(secIds1, function(x) {
@@ -11006,7 +11006,7 @@
         var totalDrops = 1;
         var allSkills = ["athletics", "acrobatics", "sleight_of_hand", "stealth", "computers", "investigation", ",mechanics", "xenobiology", "astrophysics", "insight", "lore", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"];
         var allAbilities = ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"];
-        var eraseSections = ["attack", "inventory", "traits", "resource", "proficiencies", "tool", "damagemod", "spell-cantrip"];
+        var eraseSections = ["attack", "inventory", "traits", "resource", "proficiencies", "tool", "damagemod", "spell-prime_power"];
         for(var x=1; x<=9; x++) {
             eraseSections.push("spell-" + x);
         }
@@ -11897,7 +11897,7 @@
                                 <option value="Charisma" data-i18n="charisma">Charisma</option>
                             </select>
                         </label>
-                        <label class="hilite choice custom_spellcasting">Number of Cantrips:
+                        <label class="hilite choice custom_spellcasting">Number of Prime Powers:
                             <input type="number" name="comp_custom_race_spell_number" min="1" value="1" required>
                         </label>
                         <label class="hilite choice custom_spellcasting">Spell List:
@@ -12387,8 +12387,8 @@
                                 <option value="Charisma" data-i18n="charisma">Charisma</option>
                             </select>
                         </label>
-                        <label class="hilite choice custom_spellcasting">Number of Cantrips:
-                            <input type="number" name="comp_custom_class_cantrip_number" min="0" value="1" required>
+                        <label class="hilite choice custom_spellcasting">Number of Prime Powers:
+                            <input type="number" name="comp_custom_class_prime_power_number" min="0" value="1" required>
                         </label>
                         <label class="hilite choice custom_spellcasting">Number of Level 1 Spells:
                             <input type="number" name="comp_custom_class_spell_number" min="0" value="1" required>
@@ -12408,10 +12408,10 @@
                         </label>
                     </div>
                     <div class="choice row custom_additional_spells custom_subclass">
-                        <label>Additional Cantrips:
-                            <input type="number" name="comp_custom_subclass_cantrip_number" min="0" value="0" required>
-                            <label class="choice custom_cantrip_list">Cantrip List (if different from default class list):
-                                <select name="comp_custom_subclass_cantrip_list">
+                        <label>Additional Prime Powers:
+                            <input type="number" name="comp_custom_subclass_prime_power_number" min="0" value="0" required>
+                            <label class="choice custom_prime_power_list">Prime Power List (if different from default class list):
+                                <select name="comp_custom_subclass_prime_power_list">
                                     <option value="" data-i18n="choose">Choose</option>
                                     <option value="bard" data-i18n="bard">Bard</option>
                                     <option value="cleric" data-i18n="cleric">Cleric</option>
@@ -13107,7 +13107,7 @@
         <div class="choices">
             <div class="choice race_row">
                 <div class="row choice race_level0">
-                    <p class="label"><span class="race_title"></span> Cantrips</p>
+                    <p class="label"><span class="race_title"></span> Prime Powers</p>
                     <p class="race_level0_known"></p>
                     <div class="choice race_level0_choice1">
                         <select name="comp_race_level0_choice1">
@@ -13153,7 +13153,7 @@
             </div>
             <div class="choice class_row">
                 <div class="row choice class_level0">
-                    <p class="label"><span class="class_title"></span> Cantrips</p>
+                    <p class="label"><span class="class_title"></span> Prime Powers</p>
                     <p class="class_level0_known"></p>
                     <div class="choice class_level0_choice1">
                         <select name="comp_class_level0_choice1">
@@ -14081,7 +14081,7 @@
         if(mancerdata["l1-class"] && mancerdata["l1-class"].values.custom_class_spell_ability) {
             var customAbility = mancerdata["l1-class"].values.custom_class_spell_ability;
             var customList = mancerdata["l1-class"].values.custom_class_spell_list;
-            var customSpells = {"0": mancerdata["l1-class"].values.custom_class_cantrip_number, "1": mancerdata["l1-class"].values.custom_class_spell_number};
+            var customSpells = {"0": mancerdata["l1-class"].values.custom_class_prime_power_number, "1": mancerdata["l1-class"].values.custom_class_spell_number};
             if(customList && (customSpells["0"] > 0 || customSpells["1"] > 0)) {
                 allSpells.class = allSpells.class || {known: [], choices: []}
                 _.each(customSpells, function(number, level) {
@@ -14101,12 +14101,12 @@
         }
         //Collect custom subclass spells
         if(mancerdata["l1-class"] && mancerdata["l1-class"].values.subclass == "Rules:Classes") {
-            var customSpells = {"0": mancerdata["l1-class"].values.custom_subclass_cantrip_number, "1": mancerdata["l1-class"].values.custom_subclass_spell_number};
+            var customSpells = {"0": mancerdata["l1-class"].values.custom_subclass_prime_power_number, "1": mancerdata["l1-class"].values.custom_subclass_spell_number};
             if(customSpells["0"] > 0 || customSpells["1"] > 0) {
                 allSpells.class = allSpells.class || {known: [], choices: []}
                 _.each(customSpells, function(number, level) {
                     var customList = classname.toLowerCase();
-                    if(level == "0" && mancerdata["l1-class"].values.custom_subclass_cantrip_list) customList = mancerdata["l1-class"].values.custom_subclass_cantrip_list;
+                    if(level == "0" && mancerdata["l1-class"].values.custom_subclass_prime_power_list) customList = mancerdata["l1-class"].values.custom_subclass_prime_power_list;
                     if(level == "1" && mancerdata["l1-class"].values.custom_subclass_spell_list) customList = mancerdata["l1-class"].values.custom_subclass_spell_list;
                     for(var x=1; x<=number; x++) {
                         var thisSpell = {
@@ -14337,7 +14337,7 @@
         } else {
             var set = {}
             set["custom_" + section + "_spell_number"] = "1";
-            set["custom_" + section + "_cantrip_number"] = "1";
+            set["custom_" + section + "_prime_power_number"] = "1";
             set["custom_" + section + "_spell_list"] = "";
             setAttrs(set);
             hideChoices(["custom_spellcasting"]);
@@ -14505,7 +14505,7 @@
                 reset["custom_class_prof_type_choice" + x] = "";
             }
             reset["custom_class_spell_ability"] = "";
-            reset["custom_class_cantrip_number"] = "0";
+            reset["custom_class_prime_power_number"] = "0";
             reset["custom_class_spell_number"] = "0";
             reset["custom_class_spell_list"] = "";
             reset["custom_hit_die"] = "";
@@ -14709,11 +14709,11 @@
                 reset["custom_class_prof_type_choice" + x] = "";
             }
             reset["custom_class_spell_ability"] = "";
-            reset["custom_class_cantrip_number"] = "0";
+            reset["custom_class_prime_power_number"] = "0";
             reset["custom_class_spell_number"] = "0";
             reset["custom_class_spell_list"] = "";
-            reset["custom_subclass_cantrip_number"] = "0";
-            reset["custom_subclass_cantrip_list"] = "";
+            reset["custom_subclass_prime_power_number"] = "0";
+            reset["custom_subclass_prime_power_list"] = "";
             reset["custom_subclass_spell_number"] = "0";
             reset["custom_subclass_spell_list"] = "";
             reset["subclass_name"] = "";
@@ -14808,7 +14808,7 @@
         }
     });
 
-    on("mancerchange:custom_subclass_cantrip_number mancerchange:custom_subclass_spell_number", function(eventinfo) {
+    on("mancerchange:custom_subclass_prime_power_number mancerchange:custom_subclass_spell_number", function(eventinfo) {
         var section = eventinfo.triggerName.split("_")[2];
         if(eventinfo.newValue && eventinfo.newValue > 0) {
             showChoices(["custom_" + section + "_list"]);
@@ -15977,17 +15977,17 @@
                 if (spelldata.known && spelldata.known.length) {
                     set["spell_info"] += '<p>You know these spells: ' + spelldata.known.join(", ") + '.</p>';
                 }
-                var choices = {"cantrip": [0,0], "spell": [0,0]};
+                var choices = {"prime power": [0,0], "spell": [0,0]};
                 _.each(spelldata, function(section) {
                     _.each(section.choices, function(spell) {
-                        if(spell.Level == 0) choices.cantrip[0]++;
+                        if(spell.Level == 0) choices.prime_power[0]++;
                         if(spell.Level == 1) choices.spell[0]++;
                     });
                 });
-                choices.cantrip[1] = choices.cantrip[0];
+                choices.prime_power[1] = choices.prime_power[0];
                 choices.spell[1] = choices.spell[0];
                 _.each(mancerdata["l1-spells"].values, function(val, name) {
-                    if(name.split("_")[1] == "level0" && _.last(name.split("_")) != "casting") choices.cantrip[1]--;
+                    if(name.split("_")[1] == "level0" && _.last(name.split("_")) != "casting") choices.prime_power[1]--;
                     if(name.split("_")[1] == "level1" && _.last(name.split("_")) != "casting") choices.spell[1]--;
                 });
                 _.each(choices, function(number, type) {
