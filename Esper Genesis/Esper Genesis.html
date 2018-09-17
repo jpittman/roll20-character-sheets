@@ -785,16 +785,14 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
+                                <span data-i18n="domain:-u">DOMAIN:</span>
+                                <select name="attr_talentdomain">
+                                    <option value="alteration" data-i18n="alteration">Alteration</option>
+                                    <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                    <option value="elemental" data-i18n="elemental">Elemental</option>
+                                    <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                    <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                    <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
                                 </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
@@ -925,7 +923,7 @@
                             <input type="hidden" name="attr_rollbase">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <input type="hidden" name="attr_spellprepared"><span class="prep"></span>
                                 <span class="spellname" name="attr_spellname"></span>
@@ -1946,16 +1944,14 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
+                                <span data-i18n="domain:-u">DOMAIN:</span>
+                                <select name="attr_talentdomain">
+                                    <option value="alteration" data-i18n="alteration">Alteration</option>
+                                    <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                    <option value="elemental" data-i18n="elemental">Elemental</option>
+                                    <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                    <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                    <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
                                 </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
@@ -2107,7 +2103,7 @@
                             <input type="hidden" name="attr_spelllevel" value="prime power">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
                                 <input class="innate_flag" type="hidden" name="attr_innate" value="">
@@ -2155,17 +2151,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -2308,7 +2302,7 @@
                             <input type="hidden" name="attr_spelllevel" value="1">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -2353,17 +2347,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -2506,7 +2498,7 @@
                             <input type="hidden" name="attr_spelllevel" value="2">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -2554,17 +2546,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -2707,7 +2697,7 @@
                             <input type="hidden" name="attr_spelllevel" value="3">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -2752,17 +2742,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -2905,7 +2893,7 @@
                             <input type="hidden" name="attr_spelllevel" value="4">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -2950,17 +2938,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -3103,7 +3089,7 @@
                             <input type="hidden" name="attr_spelllevel" value="5">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -3151,17 +3137,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -3304,7 +3288,7 @@
                             <input type="hidden" name="attr_spelllevel" value="6">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -3349,17 +3333,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -3502,7 +3484,7 @@
                             <input type="hidden" name="attr_spelllevel" value="7">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -3547,17 +3529,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -3700,7 +3680,7 @@
                             <input type="hidden" name="attr_spelllevel" value="8">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -3745,17 +3725,15 @@
                                 <input type="text" name="attr_spellname">
                             </div>
                             <div class="row">
-                                <span data-i18n="school:-u">SCHOOL:</span>
-                                <select name="attr_spellschool">
-                                    <option value="abjuration" data-i18n="abjuration">Abjuration</option>
-                                    <option value="conjuration" data-i18n="conjuration">Conjuration</option>
-                                    <option value="divination" data-i18n="divination">Divination</option>
-                                    <option value="enchantment" data-i18n="enchantment">Enchantment</option>
-                                    <option value="evocation" data-i18n="evocation">Evocation</option>
-                                    <option value="illusion" data-i18n="illusion">Illusion</option>
-                                    <option value="necromancy" data-i18n="necromancy">Necromancy</option>
-                                    <option value="transmutation" data-i18n="transmutation">Transmutation</option>
-                                </select>
+                              <span data-i18n="domain:-u">DOMAIN:</span>
+                              <select name="attr_talentdomain">
+                                  <option value="alteration" data-i18n="alteration">Alteration</option>
+                                  <option value="clairsentient" data-i18n="clairsentient">Clairsentient</option>
+                                  <option value="elemental" data-i18n="elemental">Elemental</option>
+                                  <option value="kinesis" data-i18n="kinesis">Kinesis</option>
+                                  <option value="metaphase" data-i18n="metaphase">Metaphase</option>
+                                  <option value="psychogenic" data-i18n="psychogenic">Psychogenic</option>
+                              </select>
                                 <input type="checkbox" name="attr_spellritual" value="{{ritual=1}}">
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
@@ -3898,7 +3876,7 @@
                             <input type="hidden" name="attr_spelllevel" value="9">
                         </div>
                         <div class="display">
-                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{spellschool} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
+                            <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
                             <input type="checkbox" name="attr_spellprepared" value="1" class="sheet-prep-box"><span class="prep"></span>
                             <button class="spellcard" type="roll" name="roll_spell" value="@{rollcontent}">
                                 <span class="spellname" name="attr_spellname"></span>
@@ -6318,7 +6296,7 @@
                     }
                     spelllevel = spelllevel + "}";
                 }
-                update[repeating_source + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{spellschool} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
+                update[repeating_source + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{talentdomain} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
             }
             setAttrs(update, {silent: true});
         });
@@ -6343,7 +6321,7 @@
                     }
                     spelllevel = spelllevel + "}";
                 }
-                update[repeating_source + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{spellschool} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
+                update[repeating_source + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{talentdomain} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
             }
             setAttrs(update, {silent: true});
         });
@@ -7132,7 +7110,7 @@
             }
             if(page.name) {update["repeating_spell-" + lvl + "_" + id + "_spellname"] = page.name};
             if(page.data["Ritual"]) {update["repeating_spell-" + lvl + "_" + id + "_spellritual"] = "{{ritual=1}}"};
-            if(page.data["School"]) {update["repeating_spell-" + lvl + "_" + id + "_spellschool"] = page.data["School"].toLowerCase()};
+            if(page.data["Domain"]) {update["repeating_spell-" + lvl + "_" + id + "_talentdomain"] = page.data["Domain"].toLowerCase()};
             if(page.data["Casting Time"]) {update["repeating_spell-" + lvl + "_" + id + "_spellcastingtime"] = page.data["Casting Time"]};
             if(page.data["Range"]) {update["repeating_spell-" + lvl + "_" + id + "_spellrange"] = page.data["Range"]};
             if(page.data["Target"]) {update["repeating_spell-" + lvl + "_" + id + "_spelltarget"] = page.data["Target"]};
@@ -7154,7 +7132,7 @@
                     spelllevel = spelllevel + "|Level " + (parseInt(i, 10) + parseInt(lvl, 10)) + "," + (parseInt(i, 10) + parseInt(lvl, 10));
                 }
                 spelllevel = spelllevel + "}";
-                update["repeating_spell-" + lvl + "_" + id + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{spellschool} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
+                update["repeating_spell-" + lvl + "_" + id + "_rollcontent"] = "@{wtype}&{template:spell} {{level=@{talentdomain} " + spelllevel + "}} {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}";
             };
             if(page.data["Spell Attack"]) {update["repeating_spell-" + lvl + "_" + id + "_spellattack"] = page.data["Spell Attack"]};
             if(page.data["Damage"]) {update["repeating_spell-" + lvl + "_" + id + "_spelldamage"] = page.data["Damage"]};
