@@ -1931,7 +1931,7 @@
                     <span class="label">0</span>
                 </div>
                 <div class="cantrips">
-                    <span class="label" data-i18n="cantrips-u">CANTRIPS</span>
+                    <span class="label" data-i18n="cantrips-u">PRIME</span>
                 </div>
             </div>
             <div class="spell-container">
@@ -2042,11 +2042,11 @@
                                     <span data-i18n="add-ability-mod-u">ADD ABILITY MOD TO DAMAGE OR HEALING</span>
                                 </div>
                                 <div class="row">
-                                    <span data-i18n="cantrip-progression:-u">CANTRIP PROGRESSION</span>
+                                    <span data-i18n="cantrip-progression:-u">PRIME PROGRESSION</span>
                                     <select name="attr_spell_damage_progression">
                                         <option value="" selected="selected" data-i18n="none-u">NONE</option>
-                                        <option value="Cantrip Dice" data-i18n="cantrip-dice-u">CANTRIP DICE</option>
-                                        <option value="Cantrip Beam" data-i18n="cantrip-beam-u">CANTRIP BEAM</option>
+                                        <option value="Cantrip Dice" data-i18n="cantrip-dice-u">PRIME DICE</option>
+                                        <option value="Cantrip Beam" data-i18n="cantrip-beam-u">PRIME BEAM</option>
                                     </select>
                                 </div>
                                 <div class="row">
@@ -2100,7 +2100,7 @@
                                 <textarea name="attr_spellathigherlevels" style="height: 36px; min-height: 36px;"></textarea>
                             </div>
                             <input type="hidden" name="attr_spellattackid">
-                            <input type="hidden" name="attr_spelllevel" value="cantrip">
+                            <input type="hidden" name="attr_spelllevel" value="prime">
                         </div>
                         <div class="display">
                             <input type="hidden" name="attr_rollcontent" value="@{wtype}&{template:spell} {{level=@{talentdomain} @{spelllevel}}}  {{name=@{spellname}}} {{castingtime=@{spellcastingtime}}} {{range=@{spellrange}}} {{target=@{spelltarget}}} @{spellcomp_v} @{spellcomp_s} @{spellcomp_m} {{material=@{spellcomp_materials}}} {{duration=@{spellduration}}} {{description=@{spelldescription}}} {{athigherlevels=@{spellathigherlevels}}} @{spellritual} {{innate=@{innate}}} @{spellconcentration} @{charname_output}">
@@ -11875,7 +11875,7 @@
                                 <option value="Charisma" data-i18n="charisma">Charisma</option>
                             </select>
                         </label>
-                        <label class="hilite choice custom_spellcasting">Number of Cantrips:
+                        <label class="hilite choice custom_spellcasting">Number of Prime Powers:
                             <input type="number" name="comp_custom_race_spell_number" min="1" value="1" required>
                         </label>
                         <label class="hilite choice custom_spellcasting">Spell List:
@@ -12363,7 +12363,7 @@
                                 <option value="Charisma" data-i18n="charisma">Charisma</option>
                             </select>
                         </label>
-                        <label class="hilite choice custom_spellcasting">Number of Cantrips:
+                        <label class="hilite choice custom_spellcasting">Number of Prime Powers:
                             <input type="number" name="comp_custom_class_cantrip_number" min="0" value="1" required>
                         </label>
                         <label class="hilite choice custom_spellcasting">Number of Level 1 Spells:
@@ -12382,9 +12382,9 @@
                         </label>
                     </div>
                     <div class="choice row custom_additional_spells custom_subclass">
-                        <label>Additional Cantrips:
+                        <label>Additional Prime Powers:
                             <input type="number" name="comp_custom_subclass_cantrip_number" min="0" value="0" required>
-                            <label class="choice custom_cantrip_list">Cantrip List (if different from default class list):
+                            <label class="choice custom_cantrip_list">Prime List (if different from default class list):
                                 <select name="comp_custom_subclass_cantrip_list">
                                     <option value="" data-i18n="choose">Choose</option>
                                     <option value="adept" data-i18n="adept">Adept</option>
@@ -13077,7 +13077,7 @@
         <div class="choices">
             <div class="choice race_row">
                 <div class="row choice race_level0">
-                    <p class="label"><span class="race_title"></span> Cantrips</p>
+                    <p class="label"><span class="race_title"></span> Prime Powers</p>
                     <p class="race_level0_known"></p>
                     <div class="choice race_level0_choice1">
                         <select name="comp_race_level0_choice1">
@@ -13123,7 +13123,7 @@
             </div>
             <div class="choice class_row">
                 <div class="row choice class_level0">
-                    <p class="label"><span class="class_title"></span> Cantrips</p>
+                    <p class="label"><span class="class_title"></span> Prime Powers</p>
                     <p class="class_level0_known"></p>
                     <div class="choice class_level0_choice1">
                         <select name="comp_class_level0_choice1">
