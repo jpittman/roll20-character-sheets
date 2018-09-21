@@ -798,7 +798,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -1957,7 +1957,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -2164,7 +2164,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -2360,7 +2360,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -2559,7 +2559,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -2755,7 +2755,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -2951,7 +2951,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -3150,7 +3150,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -3346,7 +3346,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -3542,7 +3542,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -3738,7 +3738,7 @@
                                 <span data-i18n="ritual-u">RITUAL</span>
                             </div>
                             <div class="row">
-                                <span data-i18n="casting-time:-u">CASTING TIME:</span>
+                                <span data-i18n="casting-time:-u">ACTIVATION TIME:</span>
                                 <input type="text" name="attr_spellcastingtime">
                             </div>
                             <div class="row">
@@ -5321,7 +5321,7 @@
             <div class="spacer"></div>
             {{#castingtime}}
             <div class="row">
-                <span class="bold" data-i18n="casting-time:">Casting Time:</span> <span>{{castingtime}}<span>
+                <span class="bold" data-i18n="casting-time:">Activation Time:</span> <span>{{castingtime}}<span>
             </div>
             {{/castingtime}}
             {{#range}}
@@ -7111,7 +7111,7 @@
             if(page.name) {update["repeating_spell-" + lvl + "_" + id + "_spellname"] = page.name};
             if(page.data["Ritual"]) {update["repeating_spell-" + lvl + "_" + id + "_spellritual"] = "{{ritual=1}}"};
             if(page.data["Domain"]) {update["repeating_spell-" + lvl + "_" + id + "_talentdomain"] = page.data["Domain"].toLowerCase()};
-            if(page.data["Casting Time"]) {update["repeating_spell-" + lvl + "_" + id + "_spellcastingtime"] = page.data["Casting Time"]};
+            if(page.data["Activation Time"]) {update["repeating_spell-" + lvl + "_" + id + "_spellcastingtime"] = page.data["Activation Time"]};
             if(page.data["Range"]) {update["repeating_spell-" + lvl + "_" + id + "_spellrange"] = page.data["Range"]};
             if(page.data["Target"]) {update["repeating_spell-" + lvl + "_" + id + "_spelltarget"] = page.data["Target"]};
             if(page.data["Components"]) {
