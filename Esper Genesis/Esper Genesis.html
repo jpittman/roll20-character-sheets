@@ -437,18 +437,11 @@
                     <span class="stat" name="attr_npc_acrobatics"></span>
                 </button>
             </span>
-            <span data-i18n-list-item="animal_handling">
-                <input class="flag" type="hidden" name="attr_npc_animal_handling_flag" value="0">
-                <button type="roll" name="roll_npc_animal_handling" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{animal_handling}}} {{mod=@{npc_animal_handling}}} {{r1=[[@{d20}+@{npc_animal_handling}]]}} @{rtype}+@{npc_animal_handling}]]}} {{type=Skill}}">
-                    <span data-i18n="animal_handling">Animal Handling</span>
-                    <span class="stat" name="attr_npc_animal_handling"></span>
-                </button>
-            </span>
-            <span data-i18n-list-item="arcana">
-                <input class="flag" type="hidden" name="attr_npc_arcana_flag" value="0">
-                <button type="roll" name="roll_npc_arcana" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{arcana}}} {{mod=@{npc_arcana}}} {{r1=[[@{d20}+@{npc_arcana}]]}} @{rtype}+@{npc_arcana}]]}} {{type=Skill}}">
-                    <span data-i18n="arcana">Arcana</span>
-                    <span class="stat" name="attr_npc_arcana"></span>
+            <span data-i18n-list-item="astrophysics">
+                <input class="flag" type="hidden" name="attr_npc_astrophysics_flag" value="0">
+                <button type="roll" name="roll_npc_astrophysics" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{astrophysics}}} {{mod=@{attr_npc_astrophysics}}} {{r1=[[@{d20}+@{attr_npc_astrophysics}]]}} @{rtype}+@{attr_npc_astrophysics}]]}} {{type=Skill}}">
+                    <span data-i18n="arcana">Astrophysics</span>
+                    <span class="stat" name="attr_npc_astrophysics"></span>
                 </button>
             </span>
             <span data-i18n-list-item="athletics">
@@ -458,18 +451,18 @@
                     <span class="stat" name="attr_npc_athletics"></span>
                 </button>
             </span>
+            <span data-i18n-list-item="computers">
+                <input class="flag" type="hidden" name="attr_npc_computers_flag" value="0">
+                <button type="roll" name="roll_npc_computers" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{computers}}} {{mod=@{npc_computers}}} {{r1=[[@{d20}+@{npc_computers}]]}} @{rtype}+@{npc_computers}]]}} {{type=Skill}}">
+                    <span data-i18n="computers">Computers</span>
+                    <span class="stat" name="attr_npc_computers"></span>
+                </button>
+            </span>
             <span data-i18n-list-item="deception">
                 <input class="flag" type="hidden" name="attr_npc_deception_flag" value="0">
                 <button type="roll" name="roll_npc_deception" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{deception}}} {{mod=@{npc_deception}}} {{r1=[[@{d20}+@{npc_deception}]]}} @{rtype}+@{npc_deception}]]}} {{type=Skill}}">
                     <span data-i18n="deception">Deception</span>
                     <span class="stat" name="attr_npc_deception"></span>
-                </button>
-            </span>
-            <span data-i18n-list-item="history">
-                <input class="flag" type="hidden" name="attr_npc_history_flag" value="0">
-                <button type="roll" name="roll_npc_history" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{history}}} {{mod=@{npc_history}}} {{r1=[[@{d20}+@{npc_history}]]}} @{rtype}+@{npc_history}]]}} {{type=Skill}}">
-                    <span data-i18n="history">History</span>
-                    <span class="stat" name="attr_npc_history"></span>
                 </button>
             </span>
             <span data-i18n-list-item="insight">
@@ -493,18 +486,25 @@
                     <span class="stat" name="attr_npc_investigation"></span>
                 </button>
             </span>
+            <span data-i18n-list-item="lore">
+                <input class="flag" type="hidden" name="attr_npc_lore_flag" value="0">
+                <button type="roll" name="roll_npc_lore" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{lore}}} {{mod=@{npc_lore}}} {{r1=[[@{d20}+@{npc_lore}]]}} @{rtype}+@{npc_lore}]]}} {{type=Skill}}">
+                    <span data-i18n="lore">Lore</span>
+                    <span class="stat" name="attr_npc_lore"></span>
+                </button>
+            </span>
+            <span data-i18n-list-item="mechanics">
+                <input class="flag" type="hidden" name="attr_npc_mechanics_flag" value="0">
+                <button type="roll" name="roll_npc_mechanics" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{mechanics}}} {{mod=@{npc_mechancics}}} {{r1=[[@{d20}+@{npc_mechanics}]]}} @{rtype}+@{npc_mechanics}]]}} {{type=Skill}}">
+                    <span data-i18n="mechanics">Mechanics</span>
+                    <span class="stat" name="attr_npc_mechanics"></span>
+                </button>
+            </span>
             <span data-i18n-list-item="medicine">
                 <input class="flag" type="hidden" name="attr_npc_medicine_flag" value="0">
                 <button type="roll" name="roll_npc_medicine" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{medicine}}} {{mod=@{npc_medicine}}} {{r1=[[@{d20}+@{npc_medicine}]]}} @{rtype}+@{npc_medicine}]]}} {{type=Skill}}">
                     <span data-i18n="medicine">Medicine</span>
                     <span class="stat" name="attr_npc_medicine"></span>
-                </button>
-            </span>
-            <span data-i18n-list-item="nature">
-                <input class="flag" type="hidden" name="attr_npc_nature_flag" value="0">
-                <button type="roll" name="roll_npc_nature" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{nature}}} {{mod=@{npc_nature}}} {{r1=[[@{d20}+@{npc_nature}]]}} @{rtype}+@{npc_nature}]]}} {{type=Skill}}">
-                    <span data-i18n="nature">Nature</span>
-                    <span class="stat" name="attr_npc_nature"></span>
                 </button>
             </span>
             <span data-i18n-list-item="perception">
@@ -528,13 +528,6 @@
                     <span class="stat" name="attr_npc_persuasion"></span>
                 </button>
             </span>
-            <span data-i18n-list-item="religion">
-                <input class="flag" type="hidden" name="attr_npc_religion_flag" value="0">
-                <button type="roll" name="roll_npc_religion" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{religion}}} {{mod=@{npc_religion}}} {{r1=[[@{d20}+@{npc_religion}]]}} @{rtype}+@{npc_religion}]]}} {{type=Skill}}">
-                    <span data-i18n="religion">Religion</span>
-                    <span class="stat" name="attr_npc_religion"></span>
-                </button>
-            </span>
             <span data-i18n-list-item="sleight_of_hand">
                 <input class="flag" type="hidden" name="attr_npc_sleight_of_hand_flag" value="0">
                 <button type="roll" name="roll_npc_sleight_of_hand" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{sleight_of_hand}}} {{mod=@{npc_sleight_of_hand}}} {{r1=[[@{d20}+@{npc_sleight_of_hand}]]}} @{rtype}+@{npc_sleight_of_hand}]]}} {{type=Skill}}">
@@ -554,6 +547,13 @@
                 <button type="roll" name="roll_npc_survival" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{survival}}} {{mod=@{npc_survival}}} {{r1=[[@{d20}+@{npc_survival}]]}} @{rtype}+@{npc_survival}]]}} {{type=Skill}}">
                     <span data-i18n="survival">Survival</span>
                     <span class="stat" name="attr_npc_survival"></span>
+                </button>
+            </span>
+            <span data-i18n-list-item="xenobiology">
+                <input class="flag" type="hidden" name="attr_npc_xenobiology_flag" value="0">
+                <button type="roll" name="roll_npc_xenobiology" value="@{wtype}&{template:npc} @{npc_name_flag} {{rname=^{xenobiology}}} {{mod=@{attr_npc_xenobiology}}} {{r1=[[@{d20}+@{npc_xenobiology}]]}} @{rtype}+@{npc_biology}]]}} {{type=Skill}}">
+                    <span data-i18n="biology">Biology</span>
+                    <span class="stat" name="attr_npc_biology"></span>
                 </button>
             </span>
         </div>
