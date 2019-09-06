@@ -9538,13 +9538,19 @@
         return totalcasterlevel;
     };
 
+    /**
+      * @desc look up the hit die for a class.
+      * @param string $class_string - the name of the class we're checking
+      * @return string - the hit die number for the class
+    */
     var checkHitDie = function(class_string) {
-        var d10class = ["fighter","paladin","ranger"];
-        var d8class = ["bard","cleric","druid","monk","rogue","warlock"];
-        var d6class = ["sorcerer","wizard"];
+        var d10class = ["hunter","sentinel","warrior"];
+        var d8class = ["adept","cybermancer","engineer","specialist"];
+        var d6class = ["melder"];
         class_string = class_string.toLowerCase();
-        if(class_string === "barbarian") {return "12"}
-        else if (d10class.indexOf(class_string) != -1) {return "10"}
+        // Leaving this check here, commmented out, for some historical clarity.
+        // if(class_string === "barbarian") {return "12"}
+        if (d10class.indexOf(class_string) != -1) {return "10"}
         else if (d8class.indexOf(class_string) != -1) {return "8"}
         else if (d6class.indexOf(class_string) != -1) {return "6"}
         else {return "0"};
