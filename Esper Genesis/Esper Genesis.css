@@ -5010,3 +5010,8 @@ div.sheet-globaldisplay span {
     color: red;
     margin-top: -.5em;
 }
+
+/* Esper Genesis Specific */
+.sheet-EGLogo{
+	content:url("https://raw.githubusercontent.com/jpittman/roll20-character-sheets/EsperGenesis2/Esper%20Genesis/images/Character%20Sheet%20Assets/Esper_Genesis_Logo-digital.png");
+}
